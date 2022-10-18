@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+    <title>Responsive Redesign</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+    <meta content="Responsive Redesign Writeup">
+</head>
+    <body>
+        <div id="header">
+            <h1>Responsive Redesign</h1>
+            <h3>Redesigning a page with proper graphic design principles</h3>
+        </div>
+        <hr>
+        <div id="old-website">
+            <h4 class="centered-text">The Page:</h4>
+            <p class="centered-text">
+                I decided to redesign the <a href="https://www.berkshirehathaway.com" target="_blank" rel="noopener noreferrer">Berkshire Hathaway Homepage</a>.
+                As seen below, the Berkshire Hathaway homepage consists of many links with no overarching structure, with no graphical elements on the page.
+                The page is also not responsive, and is not optimized for mobile devices.
+            </p>
+            <p>
+                If you just want to see the finished product, click <a href="https://www.placeholder.com" target="_blank" rel="noopener noreferrer">here</a>
+            </p>
+            <img class="centered-img rounded-corners" src="old-bh-homepage.png" alt="Screenshot of the Berkshire Hathaway homepage">
+            <h5 class="centered-text">Analyzing the UI and UX:</h5>
+            <div class="flex-row table-row">
+                <div class="flex-col table-col">
+                    <h6>Usability</h6>
+                    <ul>
+                        <li>There is no hierarchy: Hard to know which links are the most important</li>
+                        <li>There are no headers: Hard to know which links are related to eachother</li>
+                        <li>There is no defined starting point from which to begin looking at the webpage, leading to confusion</li>
+                    </ul>
+                </div>
+                <div class="vline"></div>
+                <div class="flex-col table-col">
+                    <h6>Learnability</h6>
+                    <ul>
+                        <li>This website is hard to <i>learn</i>, because there is nothing to learn/discover. There is no structure to explore.</li>
+                        <li>Power users cannot navigate the website more easily, since each link must be read individually to know where it leads</li>
+                    </ul>
+                </div>
+                <div class="vline"></div>
+                <div class="flex-col table-col">
+                    <h6>Memorability</h6>
+                    <ul>
+                        <li>To its credit, the site is easy to memorize if the user only goes to one link regularly -- users just need to remember the location of their link</li>
+                        <li>If the website layout changes slightly (i.e. a link is added or removed) this could impact memorability, and could result in users clicking the wrong link</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="accessibility">
+                <h5 class="centered-text">Accessibility</h5>
+                <p class="centered-text">
+                    Despite the website's simple text-first structure, the website has several failings for visually-impaired users.
+                    Primarily, website text is often very small, leading to difficulty reading the text for those with poor eyesight,
+                    and users with scren readers will need to painfully iterate through every single link on the site, since there is no structure.
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div id="lofi">
+            <h4 class="centered-text">Lo-Fi Prototyping (Balsamiq)</h4>
+            <p class="centered-text">
+                I began by creating a lo-fi prototype of the website, using a simple wireframe to create a basic structure for the website.
+                The original website was very simple, allowing for a high degree of memorability. I wanted to keep this aspect of the website,
+                and as a result all links are still accessible from the top-level of the site, with no submenus.
+                I also wanted to improve on the user experience for new users, and as a result I added an 'About Us' section, as well as some visual elements.
+            </p>
+            <div class="hline"></div>
+            <h6 class="centered-text">Desktop Site:</h6> 
+            <img class="centered-img rounded-corners" src="lofi-desktop-bh.png">
+            <p> For tablets and smaller rectangular screens, the space between the categories and edge of the screen can be shrunk</p>
+            <div class="hline"></div>
+            <h6 class="centered-text">Mobile Site:</h6>
+            <img class="centered-img-vertical rounded-corners" src="lofi-mobile-bh.png">
+            <p>For mobile devices, the categories are stacked vertically, with the 'About Us' and 'Contact Us' sections behind a hamburger menu</p>
+        </div>
+        <hr>
+        <div id="hifi">
+            <h4 class="centered-text">Hi-Fi Prototyping (Figma)</h4>
+            <p class="centered-text">
+                Transitioning to Hi-Fi design, I had to choose a color scheme for the website. I chose a design that was primarily white,
+                to keep the simple and clean look of the website, but added some greys and blues to make the website appear more trustworty,
+                complete, and blend in with the blue-highlighted links.
+            </p>
+            <div class="hline"></div>
+            <h6 class="centered-text">Desktop Site:</h6> 
+            <img class="centered-img rounded-corners" src="hifi-desktop-bh.png">
+            <p> Like the Lo-Fi, tablets and smaller rectangular screens can shrink the space between the categories and edge of the screen</p>
+            <div class="hline"></div>
+            <h6 class="centered-text">Mobile Site:</h6>
+            <img class="centered-img-vertical rounded-corners" src="hifi-mobile-bh.png">
+        </div>
+        <hr>
+        <div id="final-result">
+            <h4 class="centered-text">Finished Result</h4>
+            <p class="centered-text">
+                The finished product is a simple, clean, and easy-to-use website. The website is responsive, and can be used on any device.
+                The website is also easy to learn, as the user can easily discover the structure of the website, and can easily find the links they need.
+                The website is also easy to memorize, as the user can easily remember the location of the links they use regularly.
+            </p>
+            
+        </div>
+
+        
+    </body>
+</html>
